@@ -1,104 +1,166 @@
 # ---------------------------------------------------------------
-# Site Information Settings
+# 站点信息配置
+# 
+# 整体介绍
+# https://material.viosey.com/intro/
+# 
+# 符合 Material Design 的规范颜色
+# https://material.google.com/style/color.html#color-color-palette
 # ---------------------------------------------------------------
 
-# Head info
+# 用于配置生成的 HTML 文件的头部信息
 head:
+    # favicon: 网站的 favicon
     favicon: "/img/favicon.png"
+    # high_res_favicon: 高清 favicon
     high_res_favicon: "/img/favicon.png"
+    # apple_touch_icon: iOS 主屏按钮图标
     apple_touch_icon: "/img/favicon.png"
+    # keywords: 网站关键词
     keywords: FormatToday
+    # site_verification: 搜索引擎验证
+    #向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况
+    # 登录搜索引擎后台，选择使用 HTML 标记 验证站点所有权，搜索引擎后台会给你一串类似于这样的东西：
+    # <meta name="xxxx-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+    # 将 xxxxxxxxxxxxxxxxxxxxxxxxxxxx 字符串复制出来，填入对应搜索引擎的设置中，博客更新以后即可通过验证
     site_verification:
+        # google: 谷歌 Search Console 验证
         google:
+        # baidu: 百度站长平台验证
         baidu:
 
-    # Enable generate structured-data as JSON+LD for SEO or not.
-    #        Set as 'false' if it cause some wrong when `hexo g`.
+    # structured_data: 启用后会在页面的 head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO
+    # 这项功能需要你完善地配置主题的 站点配置文件 和 主题配置文件，所以如果你在 hexo g 中出现问题，尝试禁用该选项。默认值为 true
     structured_data: true
 
-# Jump Links Settings
+# 用于设置跳转链接
 url:
+    # rss: 设置生成的 rss 或 atom url
     rss:
+    # daily_pic: 设置 daily_pic 模块 点击时跳转的 url
     daily_pic: "#"
+    # logo: 设置 logo 点击时跳转的 url
     logo: "#"
 
 
 # ---------------------------------------------------------------
-# Style Settings
+# 样式设置
 # ---------------------------------------------------------------
 
-# Schemes
-scheme: Paradox
-#scheme: Isolation
+# 主题
+# Nexus（开发中）     最为标准的 Material Design 样式
+# Paradox             默认 Scheme，是 Material 的最初样式。居中布局，图文并茂
+# Isolation           Paradox 的至简样式，简洁明了
 
-# UI & UX: slogan, color, effect
+# scheme: Nexus
+#scheme: Isolation
+scheme: Paradox
+
+# 用于设置主题 UI 与 UX: 标语, 颜色, 特效
 uiux:
+    # slogan: 显示在 blog_info 模块中的标语，你可以设置单行标语或者多行标语
     slogan: "孤独才是提高的前提"
+    # theme_color: 主题主要颜色。主题的大部分地方使用此颜色
     theme_color: "#0097A7"
+    # theme_sub_color: 主题辅助颜色
     theme_sub_color: "#00838F"
+    # hyperlink_color: 超链接颜色
     hyperlink_color: "#00838F"
+    # button_color: 按钮颜色，例如 toTop 或 menu_button
     button_color: "#757575"
+    # android_chrome_color: 安卓 Chrome 浏览器的地址栏颜色
     android_chrome_color: "#0097A7"
+    # nprogress_color: 页面加载时顶部加载进度条的颜色
     nprogress_color: "#29d"
+    # nprogress_buffer: 页面加载时顶部加载进度条的缓冲时间
     nprogress_buffer: "800"
 
-# JS Effect Switches
+# 用来控制 Material 主题中自带的多种 js 特性
 js_effect:
+    # fade: 页面加载时部分模块的渐显效果，默认为 true
     fade: true
+    # smoothscroll: 页面平滑滚动特效，默认为 false
     smoothscroll: false
 
-# Reading experience
+# 用于设置阅读体验
 reading:
+    # entry_excerpt: 首页文章输出摘要的字符长度。默认为 80
+    # 这里设定的字符长度包括 Front-Matter 的长度，但是在首页，Front-Matter 不会显示出来
     entry_excerpt: 80
 
-# Thumbnail Settings
+# 用于设置文章缩略图相关
 thumbnail:
+    # purecolor: 填入颜色代码。如果文章内无设置缩略图，此项又不为空，则使用纯色缩略图
     purecolor:
+    # random_amount: 随机图片数量，根据 主题所在文件夹/source/img/random 中的图片数量设置
+    # Material 主题默认提供了 19 张 Material 风格的缩略图
     random_amount: 19
 
-# Background Settings
+# 用于设置站点背景
 # bing available parameter:
 #     new | color= | type=
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
-#         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
+#         type available value:  A (动物), C (人文), N (自然), S (太空), T (旅行).
 background:
+    # purecolor: 填入颜色代码。则站点使用纯色背景
     purecolor: "#F5F5F5"
+    # bgimg: 背景地址，默认调用 主题文件夹 -> source -> img 中的 bg.png
+    # 可更换此图片或者自己填入 url
     #bgimg: "/img/bg.png"
     bing:
-        enable: false
+        enable: true
         parameter:
-            color=: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow.
-            type=: A (动物), C (人文), N (自然), S (太空), T (旅行).
+            color=: blue
+            type=:  N
 
-# Images Settings
+# 用于设置站点图片
 img:
+    # logo: 显示于 blog_info 模块中
     logo: "/img/logo.png"
-    avatar: "/img/avatar.png"
+    # avatar: 你的头像设置
+    avatar: "/img/touxiang.png"
+    # daily_pic: 显示于 daily_pic 模块中
     daily_pic: "/img/daily_pic.png"
+    # sidebar_header: 显示于 sidebar 顶部
     sidebar_header: "/img/sidebar_header.png"
+    # random_thumbnail: 随机缩略图的路径
     random_thumbnail: "/img/random/material-"
+    # footerico: 设置 footer 中 SNS 图标的路径
+    # footer_image: 你可以在侧边栏底部放置任何你想要的图片
     footer_image:
         #upyun_logo:
             #link: "https://www.upyun.com/"
             #src: "/img/upyun_logo.svg"
 
-# Custom Fonts
-#   family: the font-family which will be used in the theme
+# 用于设置站点的字体
+#   family: 用于设置站点的字体
+# fonts.family 默认值为 Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+# 该字体设定为 Material Design 的规范，如无特殊要求 无需额外修改。
+# 当你修改字体时，请在 head.yml 内使用 <link> 标签引用你的字体源
+# 如何使用 head.yml，请访问进阶设定中关于 自定义代码 的部分
+# https://material.viosey.com/expert/
 #   host: uri of fonts host.
 #       Available value of "host": google | baomitu | ustc | custom | catnet
 #       When you configured 'use' as 'custom', you should fill in the value of 'custom_font_host', which should be a mirror of google fonts.
 #        If you have setup your custom font-family, don't forget to add style tag with @font-face or link.tag with font css to /source/data/head.yml as custom code, to load custom font files.
 fonts:
     family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+    # use: 用于设置站点字体的引用方式。Material 主题内置了以下三种字体库支持
+    # 除此以外，你也可以手动设定你喜欢的谷歌字体反代服务
+    # google: 使用 Google 字体库加载 Roboto 字体和 Material Icon。当使用了 Isolation UX 时，主题会从本地或 MaterialCDN 加载 Font-Awesome
+    # ustc: 使用中科大反代的 Google 字体库加载 Roboto 字体和 Material Icon。当使用了 Isolation UX 时，主题会从本地或 MaterialCDN 加载 Font-Awesome
+    # baomitu: 使用 360 前端团队 奇舞团 维护的字体库加载 Roboto 字体和 Material Icon。当使用了 Isolation UX 时，主题会从 奇舞团 维护的公共 CDN 库加载 Font-Awesome
+    # custom, 使用你喜欢的谷歌字体反代服务加载 Roboto 字体和 Material Icon。使用该选项需要在 custom_font_host 中填入字体库的 URL。当使用了 Isolation UX 时，主题会从本地或 MaterialCDN 加载 Font-Awesome
     use: google
+    # 注意！custom_font_host 中设定的字体库的 URL 需要带 proctol（如 https://）且末尾不能带 /
     custom_font_host:
 
-# Card Elevation Level
+# 用来设置主题卡片阴影
 card_elevation: 2
 
-# Copyright
-# Specify the date when the site was setup.
-#   For example, if you set it as 2015, then footer will show '© 2015 - 2017'
+# 用于设置站点成立的时间
+# 例如，如果你设置了 2015，那么 footer 就会显示 © 2015 - 2017
+# 如果这个值为空，那么 footer 只会显示现在的年份
 copyright_since: 2017
 
 # Footer Text
@@ -107,13 +169,13 @@ copyright_since: 2017
 #       '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
 footer_text:
 
-# Qrcode for redirect at other device
-#   use: choose which method to generate the qrcode for each posts.
-#       Available value of "use": plugin | online
-#           - When use "plugin", you need to install the hexo-helper-qrcode.
-#           - When use "online", the qrcode will be generated by 'pan.baidu.com' in China.
+# 用于在文章页中显示二维码，扫描二维码即可直接打开文章
+# enable: 是否显示二维码
+# use: 设置生成二维码的方式，可选的有：plugin | online
+# 当 use 设置为 plugin 时，你需要安装 hexo-helper-qrcode 插件，使用 npm install hexo-helper-qrcode --save 安装。
+# 当 use 设置为 online 时，二维码将会由 pan.baidu.com 的 API 生成。
 qrcode:
-    enable: true
+    enable: false
     use: plugin
 
 # Code highlight
@@ -158,11 +220,10 @@ license:
 # TOC Button
 
 toc:
-#   use: choose whether the line_number of toc will show or not.
-#       Available value of "linenumber": true | false
+# 是否显示 TOC(Table of Content) 菜单中的行号
     linenumber: true
 
-# SNS Menu
+# 用于填写你的 SNS 信息，其中 email 会显示在侧边栏，其他信息会以按钮的形式显示在 footer
 sns:
     email: 616099456@qq.com
     facebook: 
@@ -178,7 +239,7 @@ sns:
     telegram:
     v2ex:
 
-# SNS Share Switch
+# 用于定义分享菜单中的项目， false 的项将不会显示在分享菜单中
 sns_share:
     qq: true
     weibo: true
@@ -188,24 +249,34 @@ sns_share:
     linkedin: false
     telegram: false
 
-# Sidebar Customize
+# 侧边栏设置
+# 图标网址：
+# https://material.io/icons/
 sidebar:
+    # 用于设置 Paradox 侧边栏用户下拉菜单，默认为空
     dropdown:
         Email Me:
             link: "#"
             icon: email
+    # 设置 “主页” 按钮
     homepage:
         use: true
         icon: home
         divider: false
+    # 用来设置归档下拉菜单
     archives:
         use: true
         icon: inbox
         divider: false
+    # 用来设置分类显示按钮
     categories:
         use: true
         icon: chrome_reader_mode
         divider: true
+    # 用于设置独立页面的入口，默认为空。填写条目后独立页面入口将显示在:
+    # logo card 的 Page 按钮下拉菜单中。(Scheme Paradox)
+    # 侧边栏。(Scheme Paradox)
+    # 站点左侧。(Scheme Isolation)
     pages:
         #About:
             #link: "/about"
@@ -223,9 +294,11 @@ sidebar:
             link: "/gallery"
             icon: videocam
             divider: true
+    # 在主题的侧边栏显示文章总数
     article_num:
         use: true
         divider: false
+    # 配置侧边栏的底部
     footer:
         divider: true
         theme: true
