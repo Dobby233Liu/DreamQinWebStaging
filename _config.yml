@@ -74,7 +74,8 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 
 # theme: landscape
-theme: landfarz
+# theme: landfarz
+theme: material
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
