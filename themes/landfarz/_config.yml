@@ -1,14 +1,17 @@
 # menu - 导航栏的菜单，键值对形式，键为文字，值为链接
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+
 
 # sidebar - 侧栏的位置
 sidebar: right
 
 # widgets - 侧栏上的小工具，一行一个
 widgets:
-- search
+# - search
 - category
 - recent_posts
 - tag
