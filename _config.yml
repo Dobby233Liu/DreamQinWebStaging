@@ -5,9 +5,9 @@
 # Site
 title: Dreamqin56
 subtitle: 
-description: 存点小资料、教程、心得之类的
+description: 孤独才是提高的前提
 author: FormatToday
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -72,6 +72,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+
+# theme: landscape
 theme: landfarz
 
 # Deployment

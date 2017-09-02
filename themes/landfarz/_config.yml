@@ -1,9 +1,12 @@
+# menu - 导航栏的菜单，键值对形式，键为文字，值为链接
 menu:
   Home: /
   Archives: /archives
 
+# sidebar - 侧栏的位置
 sidebar: right
 
+# widgets - 侧栏上的小工具，一行一个
 widgets:
 - search
 - category
@@ -12,12 +15,19 @@ widgets:
 - tagcloud
 
 # Duoshuo
+# duoshuo_shortname - 站点的多说ID，可选
 duoshuo_shortname: 
 
+# fancybox - 是否开启 jQuery 弹出层效果
 fancybox: true
 
+# google_analytics - Google Analytics ID ，可选
 google_analytics:
+# rss - rss 订阅链接，可选
 rss: 
+# google_site_verification - 用于谷歌站长工具验证所有权的ID，可选
 google_site_verification: 
+# baidu_site_verification - 用于百度站长工具验证所有权的ID，可选
 baidu_site_verification: 
+# icon - 用于在浏览器标签上显示的图标，可选，如果不指定则会加载默认图标
 icon: 
