@@ -1,7 +1,7 @@
 ---
 title: hexo相关指令
 date: 2017-09-02 09:52:24
-tags:
+tags: Hexo
 ---
 ## Quick Start
 

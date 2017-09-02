@@ -1,7 +1,7 @@
 ---
 title: 使用travis CI自动化部署Hexo
 date: 2017-09-02 09:57:59
-tags:
+tags: Hexo
 ---
 > 教程为本人留存，其中有步骤的简化，有问题邮箱联系我 616099456@qq.com
 
