@@ -294,10 +294,6 @@ sidebar:
             link: "/gallery"
             icon: videocam
             divider: true
-        ppt:
-            link: "/ppt"
-            icon: videocam
-            divider: true
     # 在主题的侧边栏显示文章总数
     article_num:
         use: true
