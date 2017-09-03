@@ -1,7 +1,6 @@
 ---
 title: travis CI教程
 thumbnail: ''
-top: false
 date: 2017-09-03 16:51:24
 tags:
 categories:

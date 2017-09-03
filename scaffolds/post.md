@@ -5,5 +5,4 @@ categories:
 description: 
 thumbnail: ''
 date: {{ date }} 
-top: false
 ---
