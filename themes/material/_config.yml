@@ -175,7 +175,7 @@ footer_text:
 # 当 use 设置为 plugin 时，你需要安装 hexo-helper-qrcode 插件，使用 npm install hexo-helper-qrcode --save 安装。
 # 当 use 设置为 online 时，二维码将会由 pan.baidu.com 的 API 生成。
 qrcode:
-    enable: false
+    enable: true
     use: plugin
 
 # Code highlight
