@@ -7,13 +7,19 @@ top: true
 ---
 > 文章思路借鉴了网上文章，如有雷同，十分正常。有问题邮箱联系我，页面左上角点开即可看到邮箱
 
-使用travis CI自动化部署Hexo到github pages ，并使用腾讯云的cdn加速国内的访问
+## 使用travis CI自动化部署Hexo到github pages ，并使用腾讯云的cdn加速国内的访问
 
 # 折腾完成后日常操作流程
 `建立md文件->写博客->推送到git->没了`
 没错,就是这么简单,熬出头的好处就是什么神都不要烦.写完推送一下等一小会就全部完成了.
 
 # 目录
+
+占个坑，有时间补齐详细教程
+[ ](http://www.jianshu.com/p/5691815b81b6)
+[ ](https://zhuanlan.zhihu.com/p/26625249?utm_source=weibo&utm_medium=social)
+
+
 1. [github pages相关](./2017/09/03/github%20pages%E6%95%99%E7%A8%8B/) (未完成)
 1. [hexo相关](./2017/09/03/hexo%E6%95%99%E7%A8%8B/) (未完成)
 1. [travis CI相关](./2017/09/03/travis-CI%E6%95%99%E7%A8%8B/) (未完成)
@@ -26,11 +32,8 @@ top: true
 # 优缺点
 ## Hexo的优点
 > 摘自官网
-
-![1](_img/2017-09-03-16-55-50.png)
-![2](_img/2017-09-03-16-55-59.png)
-![3](_img/2017-09-03-16-56-06.png)
-![4](_img/2017-09-03-16-56-13.png)
+![mark](http://ovhqars5t.bkt.clouddn.com/blog/170903/lf3EhgkkjH.png?imageslim)
+![mark](http://ovhqars5t.bkt.clouddn.com/blog/170903/J8g6GebEaE.png?imageslim)
 
 ## Hexo的缺点
 
@@ -59,9 +62,5 @@ top: true
 麻烦呗,不过玩博客不就是为了折腾嘛。
 
 
-
-# 占个坑，有时间补齐详细教程
-[ ](http://www.jianshu.com/p/5691815b81b6)
-[ ](https://zhuanlan.zhihu.com/p/26625249?utm_source=weibo&utm_medium=social)
 
 
