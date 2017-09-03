@@ -11,11 +11,11 @@
 # 用于配置生成的 HTML 文件的头部信息
 head:
     # favicon: 网站的 favicon
-    favicon: "/img/favicon.png"
+    favicon: "/img/bitbug_favicon.ico"
     # high_res_favicon: 高清 favicon
-    high_res_favicon: "/img/favicon.png"
+    high_res_favicon: "/img/bitbug_favicon.ico"
     # apple_touch_icon: iOS 主屏按钮图标
-    apple_touch_icon: "/img/favicon.png"
+    apple_touch_icon: "/img/bitbug_favicon.ico"
     # keywords: 网站关键词
     keywords: FormatToday
     # site_verification: 搜索引擎验证
