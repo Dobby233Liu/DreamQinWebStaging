@@ -7,7 +7,8 @@ top: true
 ---
 > 文章思路借鉴了网上文章，如有雷同，十分正常。有问题邮箱联系我，页面左上角点开即可看到邮箱
 
-## 使用travis CI自动化部署Hexo到github pages ，并使用腾讯云的cdn加速国内的访问
+## 本系列教程的目的：
+### 使用travis CI自动化部署Hexo到github pages ，并使用腾讯云的cdn加速国内的访问
 
 # 折腾完成后日常操作流程
 `建立md文件->写博客->推送到git->没了`
@@ -20,16 +21,17 @@ top: true
 [ ](https://zhuanlan.zhihu.com/p/26625249?utm_source=weibo&utm_medium=social)
 
 
-1. [github pages相关](./2017/09/03/github%20pages%E6%95%99%E7%A8%8B/) (未完成)
-1. [hexo相关](./2017/09/03/hexo%E6%95%99%E7%A8%8B/) (未完成)
-1. [travis CI相关](./2017/09/03/travis-CI%E6%95%99%E7%A8%8B/) (未完成)
-1. [cdn相关](./2017/09/03/cdn%E6%95%99%E7%A8%8B/) (未完成)
+1. [github pages相关](http://zhangqin56.cn/2017/09/03/github%20pages%E6%95%99%E7%A8%8B/) 
+1. [hexo相关](http://zhangqin56.cn/2017/09/03/hexo%E6%95%99%E7%A8%8B/) (未完成)
+1. [travis CI相关](http://zhangqin56.cn/2017/09/03/travis-CI%E6%95%99%E7%A8%8B/) (未完成)
+1. [cdn相关](http://zhangqin56.cn/2017/09/03/cdn%E6%95%99%E7%A8%8B/) (未完成)
 
 
 
 
 
 # 优缺点
+
 ## 1.Hexo的优点
 > 摘自官网
 ![mark](http://ovhqars5t.bkt.clouddn.com/blog/170903/lf3EhgkkjH.png?imageslim)
