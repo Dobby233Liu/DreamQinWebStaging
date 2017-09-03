@@ -16,11 +16,12 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "FormatToday"
-  - git config user.email "616099456@qq.com"
+  - git config --global user.name "FormatToday"
+  - git config --global user.email "616099456@qq.com"
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${token}@${GH_REF}" master:master
+  - git push --force --quiet "https://FormatToday:${coding}@${GH_REF}" master:master
 # E: Build LifeCycle
 
 branches:
