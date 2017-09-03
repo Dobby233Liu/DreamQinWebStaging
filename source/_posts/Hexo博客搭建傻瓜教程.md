@@ -9,21 +9,19 @@ top: true
 
 使用travis CI自动化部署Hexo到github pages ，并使用腾讯云的cdn加速国内的访问
 
-# 建立完成日常操作流程
-```
-hexo n 建立文件
-git add .  
-git commit -m "new post" 
-git push
+# 折腾完成后日常操作流程
+`建立md文件->写博客->推送到git->没了`
+没错,就是这么简单,熬出头的好处就是什么神都不要烦.
 
-```
+
 
 # Hexo的优点
 > 摘自官网
-![2017-09-03-16-55-50](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-55-50.png)
-![2017-09-03-16-55-59](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-55-59.png)
-![2017-09-03-16-56-06](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-56-06.png)
-![2017-09-03-16-56-13](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-56-13.png)
+
+![1](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-55-50.png)
+![2](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-55-59.png)
+![3](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-56-06.png)
+![4](http://ovhqars5t.bkt.clouddn.com/2017-09-03-16-56-13.png)
 
 
 # travis CI优处
