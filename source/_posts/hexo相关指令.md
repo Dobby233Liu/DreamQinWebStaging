@@ -1,7 +1,10 @@
 ---
 title: hexo相关指令
+thumbnail: ''
 date: 2017-09-02 09:52:24
 tags: Hexo
+categories:
+description:
 ---
 ## Quick Start
 

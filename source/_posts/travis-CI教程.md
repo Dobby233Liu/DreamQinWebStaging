@@ -2,7 +2,7 @@
 title: travis CI教程
 thumbnail: ''
 date: 2017-09-03 16:51:24
-tags:
+tags: [Hexo,travis CI]
 categories:
 description:
 ---
