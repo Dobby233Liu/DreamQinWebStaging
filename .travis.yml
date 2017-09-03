@@ -21,6 +21,7 @@ after_script:
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${token}@${GH_REF}" master:master
+  - git push --force --quiet "https://FormatToday:${coding}@${CO_REF}" master:master
 # E: Build LifeCycle
 
 branches:
@@ -29,3 +30,5 @@ branches:
 env:
  global:
    - GH_REF: github.com/FormatToday/FormatToday.github.io.git
+   - CO_REF: git.coding.net/FormatToday/FormatToday.coding.me.git
+  #  CESHI
