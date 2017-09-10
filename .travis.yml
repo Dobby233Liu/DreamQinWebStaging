@@ -22,9 +22,6 @@ after_script:
   - git commit -m "Update docs"
   - git push --force --quiet "https://FormatToday:${coding}@${CO_REF}" master:master
   - git push --force --quiet "https://${token}@${GH_REF}" master:master
-  - hexo d
-
-
 # E: Build LifeCycle
 
 branches:
