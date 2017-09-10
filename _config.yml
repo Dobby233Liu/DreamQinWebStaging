@@ -84,6 +84,11 @@ theme: material
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/FormatToday/FormatToday.github.io.git
-  branch: master
+  # type: git
+  # repo: https://github.com/FormatToday/FormatToday.github.io.git
+  # branch: master
+  type: ftpsync
+  host: blog.zhangqin56.cn
+  user: zq
+  pass: Kw7t1n6a
+  
