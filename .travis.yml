@@ -20,8 +20,9 @@ after_script:
   - git config --global user.email "616099456@qq.com"
   - git add .
   - git commit -m "Update docs"
-  - git push --force --quiet "https://${token}@${GH_REF}" master:master
   - git push --force --quiet "https://FormatToday:${coding}@${CO_REF}" master:master
+  - git push --force --quiet "https://${token}@${GH_REF}" master:master
+
 # E: Build LifeCycle
 
 branches:
