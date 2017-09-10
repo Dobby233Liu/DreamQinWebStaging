@@ -319,8 +319,8 @@ sidebar:
 comment:
     use: changyan
     shortname: # duoshuo or disqus shortname
-    changyan_appid: cyrz8lI9J
-    changyan_conf: prod_789779750f5a59f9a4e4cebe60085f18
+    changyan_appid: cytcX5Xmj
+    changyan_conf: prod_a8048237cb959d4d68e0ebea2a47f4d4
     changyan_thread_key_type: path
     livere_data_uid:
     gitment_repo:   # git repo of the hexo
