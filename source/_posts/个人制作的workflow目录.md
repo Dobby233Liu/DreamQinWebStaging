@@ -5,6 +5,7 @@ date: 2017-09-09 23:31:55
 tags:
 categories:
 description:
+comment: true
 ---
 
 # 更新器版本

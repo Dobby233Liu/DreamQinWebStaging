@@ -5,4 +5,5 @@ categories:
 description: 
 thumbnail: ''
 date: {{ date }} 
+comment: true
 ---
