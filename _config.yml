@@ -75,6 +75,8 @@ search:
 	field: all
 ## Themes: https://hexo.io/themes/
 
+skip_render:
+ - version/*
 # theme: landscape
 # theme: landfarz
 theme: material
